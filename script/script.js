@@ -91,7 +91,15 @@ let cardTemplate = `
 </li>
 <li><strong>testo di colore:</strong> ${card.flavorText.author}${card.flavorText.quote}</li> 
 <li><strong>abilità:</strong> ${abilitiesContent}</li>
-
+<li><strong>costituzione:</strong> ${card.costitution}</li>
+<li><strong>forza:</strong> ${card.strength}</li>
+<li><strong>colore bordo:</strong> ${card.borderColor}</li>
+<li><strong>illustrazione:</strong> 
+    <ul>
+        <li><strong>autore:</strong> ${card.illustrator.author.name} (id: ${card.illustrator.author.id})</li>
+    </ul>
+</li>
+<li><strong>autore:</strong> ${card.illustrator.author.source} (id: ${card.illustrator.author.id})</li>
 </ul>
 `;
 
